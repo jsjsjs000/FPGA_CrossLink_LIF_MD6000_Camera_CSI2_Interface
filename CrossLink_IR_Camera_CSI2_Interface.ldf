@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="CrossLink_IR_Camera_CSI2_Interface" device="LIF-MD6000-6KMG80I" default_implementation="impl3_csi2_test_screen">
+    <Options/>
+    <Implementation title="impl1_gpio_test" dir="impl1_gpio_test" description="impl1_gpio_test" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="gpio_test"/>
+        <Source name="impl1_gpio_test/gpio_test.v" type="Verilog" type_short="Verilog">
+            <Options top_module="gpio_test"/>
+        </Source>
+        <Source name="CrossLink_IR_Camera_CSI2_Interface.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="impl1_gpio_test/impl1_gpio_test.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Implementation title="impl2_pll_gpio_test" dir="impl2_pll_gpio_test" description="impl2_pll_gpio_test" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="ips" top="top"/>
+        <Source name="impl2_pll_gpio_test/gpio_test.v" type="Verilog" type_short="Verilog">
+            <Options top_module="top"/>
+        </Source>
+        <Source name="impl2_pll_gpio_test/ips/ips.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="impl2_pll_gpio_test/impl2_pll_gpio_test.xcf" type="Programming Project File" type_short="Programming">
+            <Options/>
+        </Source>
+        <Source name="impl2_pll_gpio_test/source/CrossLink_IR_Camera_CSI2_Interface.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Implementation title="impl3_csi2_test_screen" dir="impl3_csi2_test_screen" description="impl3_csi2_test_screen" synthesis="synplify" default_strategy="Strategy1">
+        <Options def_top="p2m_top" top="top"/>
+        <Source name="impl3_csi2_test_screen/gpio_test.v" type="Verilog" type_short="Verilog">
+            <Options top_module="top"/>
+        </Source>
+        <Source name="impl3_csi2_test_screen/ips/ips.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="impl3_csi2_test_screen/synthesis_directives.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl3_csi2_test_screen/top.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl3_csi2_test_screen/csi2_glue.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl3_csi2_test_screen/source/CrossLink_IR_Camera_CSI2_Interface.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="CrossLink_IR_Camera_CSI2_Interface1.sty"/>
+</BaliProject>

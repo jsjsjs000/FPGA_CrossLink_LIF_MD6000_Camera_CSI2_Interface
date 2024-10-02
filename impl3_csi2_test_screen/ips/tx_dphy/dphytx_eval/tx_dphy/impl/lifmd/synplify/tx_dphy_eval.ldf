@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="tx_dphy_eval" device="LIF-MD6000-6KMG80I" synthesis="synplify" default_implementation="tx_dphy_eval">
+    <Implementation title="tx_dphy_eval" dir="tx_dphy_eval" description="tx_dphy_eval" default_strategy="tx_dphy_top">
+        <Options>
+            <Option name="HDL type" value="Verilog"/>
+            <Option name="top" value="tx_dphy_wrap"/>
+        </Options>
+        <Source name="../../../../../tx_dphy_synchronizer.v" type="Verilog"/>
+        <Source name="../../../../../tx_dphy_pkt_formatter_bb.v" type="Verilog"/>
+        <Source name="../../../../../tx_dphy_tx_global_operation_bb.v" type="Verilog"/>
+        <Source name="../../../../../tx_dphy_dci_wrapper.v" type="Verilog"/>
+        <Source name="../../../../../tx_dphy_tinit_count_bb.v" type="Verilog"/>
+        <Source name="../../../../../tx_dphy_dphy_tx.v" type="Verilog"/>
+        <Source name="../../../../../tx_dphy_wrap.v" type="Verilog"/>
+        <Source name="tx_dphy_top.lpf" type="Logic Preference"/>
+    </Implementation>
+    <Strategy name="tx_dphy_top" file="tx_dphy_top.sty"/>
+</BaliProject>

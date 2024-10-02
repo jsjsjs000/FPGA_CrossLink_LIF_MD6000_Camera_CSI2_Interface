@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="p2b_eval" device="LIF-MD6000-6KMG80I" synthesis="synplify" default_implementation="p2b_eval">
+    <Implementation title="p2b_eval" dir="p2b_eval" description="p2b_eval" default_strategy="p2b_top">
+        <Options>
+            <Option name="HDL type" value="Verilog"/>
+            <Option name="top" value="p2b_wrap"/>
+        </Options>
+        <Source name="../../../../../p2b_synchronizer_bb.v" type="Verilog"/>
+        <Source name="../../../../../p2b_pixel2byte_bb.v" type="Verilog"/>
+        <Source name="../../../../../p2b_wrap.v" type="Verilog"/>
+        <Source name="p2b_top.lpf" type="Logic Preference"/>
+    </Implementation>
+    <Strategy name="p2b_top" file="p2b_top.sty"/>
+</BaliProject>

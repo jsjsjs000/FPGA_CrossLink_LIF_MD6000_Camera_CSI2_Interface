@@ -1,0 +1,35 @@
+[Device]
+Family=sn5w00
+PartType=LIF-MD6000
+PartName=LIF-MD6000-6KMG80I
+SpeedGrade=6
+Package=CKFBGA80
+OperatingCondition=IND
+Status=S
+
+[IP]
+VendorName=Lattice Semiconductor Corporation
+CoreType=IPCFG
+CoreStatus=
+CoreName=Pixel to Byte Converter
+CoreRevision=1.3
+ModuleName=p2b
+SourceFormat=Verilog
+ParameterFileVersion=1.0
+Date=10/02/2024
+Time=19:54:03
+
+[Parameters]
+numtxln=2
+txgear=8
+pixperclk=1
+data_type_str=RGB888
+dsiformat=0
+dt=6'h24
+data_type=RGB888
+wordwidth=24
+datawidth=16
+txtype=CSI2
+miscon=1
+txfr_sig=1
+CORE_SYNP=1

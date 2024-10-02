@@ -1,0 +1,1 @@
+run_tcl -fg CrossLink_IR_Camera_CSI2_Interface_impl1_gpio_test_synplify.tcl

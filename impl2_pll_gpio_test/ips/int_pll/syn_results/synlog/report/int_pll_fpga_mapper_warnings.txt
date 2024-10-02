@@ -1,0 +1,1 @@
+@W: MT246 :"c:\jarsulk-pco\projects\crosslink-ir-camera-csi2-interface\impl2_pll_gpio_test\ips\int_pll\int_pll.v":57:12:57:20|Blackbox EHXPLLM is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results)
