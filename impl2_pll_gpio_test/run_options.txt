@@ -1,7 +1,7 @@
 #--  Synopsys, Inc.
 #--  Version U-2023.03L-SP1
 #--  Project file C:\jarsulk-pco\projects\CrossLink-IR-Camera-CSI2-Interface\impl2_pll_gpio_test\run_options.txt
-#--  Written on Wed Oct  2 17:57:29 2024
+#--  Written on Thu Oct  3 13:33:07 2024
 
 
 #project files

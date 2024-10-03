@@ -3,7 +3,8 @@
 #
 
 # Period Constraints 
-#FREQUENCY NET "int_pll_inst/CLKOS_c" 200.0 MHz;
+#FREQUENCY NET "i_tx_dphy/u_dphy_tx/dci_wrapper_inst/byte_clk" 200.0 MHz;
+#FREQUENCY PORT "pix_clk_i" 200.0 MHz;
 
 
 # Output Constraints 
@@ -15,6 +16,10 @@
 
 
 # Block Path Constraints 
+#BLOCK PATH FROM CLKNET "pix_clk_i_c" TO CLKNET "i_tx_dphy/u_dphy_tx/dci_wrapper_inst/byte_clk";
+#BLOCK PATH FROM CLKNET "i_tx_dphy/u_dphy_tx/dci_wrapper_inst/byte_clk" TO CLKNET "pix_clk_i_c";
+#BLOCK PATH FROM CLKNET "pix_clk_i_c" TO CLKNET "i_tx_dphy/u_dphy_tx/dci_wrapper_inst/byte_clk";
+#BLOCK PATH FROM CLKNET "i_tx_dphy/u_dphy_tx/dci_wrapper_inst/byte_clk" TO CLKNET "pix_clk_i_c";
 
 BLOCK ASYNCPATHS;
 

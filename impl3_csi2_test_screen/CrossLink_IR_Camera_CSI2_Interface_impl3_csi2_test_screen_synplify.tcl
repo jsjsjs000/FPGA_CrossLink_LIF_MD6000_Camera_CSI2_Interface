@@ -63,6 +63,7 @@ add_file -verilog -vlog_std v2001 {C:/jarsulk-pco/projects/CrossLink-IR-Camera-C
 add_file -verilog -vlog_std v2001 {C:/jarsulk-pco/projects/CrossLink-IR-Camera-CSI2-Interface/impl3_csi2_test_screen/synthesis_directives.v}
 add_file -verilog -vlog_std v2001 {C:/jarsulk-pco/projects/CrossLink-IR-Camera-CSI2-Interface/impl3_csi2_test_screen/top.v}
 add_file -verilog -vlog_std v2001 {C:/jarsulk-pco/projects/CrossLink-IR-Camera-CSI2-Interface/impl3_csi2_test_screen/csi2_glue.v}
+add_file -verilog -vlog_std v2001 {C:/jarsulk-pco/projects/CrossLink-IR-Camera-CSI2-Interface/impl3_csi2_test_screen/img_test.v}
 
 #-- top module name
 set_option -top_module top

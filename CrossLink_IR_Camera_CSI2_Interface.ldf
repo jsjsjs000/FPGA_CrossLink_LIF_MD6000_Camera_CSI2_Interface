@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<BaliProject version="3.2" title="CrossLink_IR_Camera_CSI2_Interface" device="LIF-MD6000-6KMG80I" default_implementation="impl3_csi2_test_screen">
+<BaliProject version="3.2" title="CrossLink_IR_Camera_CSI2_Interface" device="LIF-MD6000-6KMG80I" default_implementation="impl4_csi2_hackster_test_screen">
     <Options/>
     <Implementation title="impl1_gpio_test" dir="impl1_gpio_test" description="impl1_gpio_test" synthesis="synplify" default_strategy="Strategy1">
         <Options def_top="gpio_test"/>
@@ -29,9 +29,9 @@
         </Source>
     </Implementation>
     <Implementation title="impl3_csi2_test_screen" dir="impl3_csi2_test_screen" description="impl3_csi2_test_screen" synthesis="synplify" default_strategy="Strategy1">
-        <Options def_top="p2m_top" top="top"/>
+        <Options def_top="top" top="top"/>
         <Source name="impl3_csi2_test_screen/gpio_test.v" type="Verilog" type_short="Verilog">
-            <Options top_module="top"/>
+            <Options/>
         </Source>
         <Source name="impl3_csi2_test_screen/ips/ips.sbx" type="sbx" type_short="SBX">
             <Options/>
@@ -40,12 +40,48 @@
             <Options/>
         </Source>
         <Source name="impl3_csi2_test_screen/top.v" type="Verilog" type_short="Verilog">
-            <Options/>
+            <Options top_module="top"/>
         </Source>
         <Source name="impl3_csi2_test_screen/csi2_glue.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
+        <Source name="impl3_csi2_test_screen/image_generator.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="impl3_csi2_test_screen/test_screens_generator.v" type="Verilog" type_short="Verilog" excluded="TRUE">
+            <Options/>
+        </Source>
+        <Source name="impl3_csi2_test_screen/img_test.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
         <Source name="impl3_csi2_test_screen/source/CrossLink_IR_Camera_CSI2_Interface.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Implementation title="impl4_csi2_hackster_test_screen" dir="impl4_csi2_hackster_test_screen" description="impl4_csi2_hackster_test_screen" synthesis="synplify" default_strategy="Area">
+        <Options def_top="simulator_top" top="simulator_top"/>
+        <Source name="impl4_csi2_hackster_test_screen/ip_cores/ip_cores.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="impl4_csi2_hackster_test_screen/i2c_slave_top.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl4_csi2_hackster_test_screen/image_generator.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl4_csi2_hackster_test_screen/simulator_top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="simulator_top"/>
+        </Source>
+        <Source name="impl4_csi2_hackster_test_screen/csi2_tx_simulator_ctrl.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl4_csi2_hackster_test_screen/i2c_slave_logic.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="CrossLink_IR_Camera_CSI2_Interface.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="impl4_csi2_hackster_test_screen/impl4_csi2_hackster_test_screen.xcf" type="Programming Project File" type_short="Programming">
             <Options/>
         </Source>
     </Implementation>

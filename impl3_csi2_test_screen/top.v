@@ -1,6 +1,6 @@
 `include "synthesis_directives.v"
 
-module p2m_top (
+module top (
 	input        								pix_clk_i,
 	input        								reset_n_i,
 	`ifdef MISC_ON
@@ -64,73 +64,73 @@ wire 		tx_ld_pyld		;
 
 
 `ifdef NUM_PIX_LANE_1
-wire [PIX_WIDTH - 1:0] pixdata0;
-	 assign pixdata0 = pixdata_i[(PIX_WIDTH  ) - 1:0            ];
+	wire [PIX_WIDTH - 1:0] pixdata0;
+	assign pixdata0 = pixdata_i[(PIX_WIDTH  ) - 1:0            ];
 `elsif NUM_PIX_LANE_2
-wire [PIX_WIDTH - 1:0] pixdata0;
-wire [PIX_WIDTH - 1:0] pixdata1;
-	 assign pixdata0 = pixdata_i[(PIX_WIDTH  ) - 1:0            ];
-	 assign pixdata1 = pixdata_i[(PIX_WIDTH*2) - 1:(PIX_WIDTH  )];
+	wire [PIX_WIDTH - 1:0] pixdata0;
+	wire [PIX_WIDTH - 1:0] pixdata1;
+	assign pixdata0 = pixdata_i[(PIX_WIDTH  ) - 1:0            ];
+	assign pixdata1 = pixdata_i[(PIX_WIDTH*2) - 1:(PIX_WIDTH  )];
 `elsif NUM_PIX_LANE_4
-wire [PIX_WIDTH - 1:0] pixdata0;
-wire [PIX_WIDTH - 1:0] pixdata1;
-wire [PIX_WIDTH - 1:0] pixdata2;
-wire [PIX_WIDTH - 1:0] pixdata3;
+	wire [PIX_WIDTH - 1:0] pixdata0;
+	wire [PIX_WIDTH - 1:0] pixdata1;
+	wire [PIX_WIDTH - 1:0] pixdata2;
+	wire [PIX_WIDTH - 1:0] pixdata3;
 	 assign pixdata0 = pixdata_i[(PIX_WIDTH  ) - 1:0            ];
 	 assign pixdata1 = pixdata_i[(PIX_WIDTH*2) - 1:(PIX_WIDTH  )];
 	 assign pixdata2 = pixdata_i[(PIX_WIDTH*3) - 1:(PIX_WIDTH*2)];
 	 assign pixdata3 = pixdata_i[(PIX_WIDTH*4) - 1:(PIX_WIDTH*3)];
 `elsif NUM_PIX_LANE_6
-wire [PIX_WIDTH - 1:0] pixdata0;
-wire [PIX_WIDTH - 1:0] pixdata1;
-wire [PIX_WIDTH - 1:0] pixdata2;
-wire [PIX_WIDTH - 1:0] pixdata3;
-wire [PIX_WIDTH - 1:0] pixdata4;
-wire [PIX_WIDTH - 1:0] pixdata5;
-	 assign pixdata0 = pixdata_i[(PIX_WIDTH  ) - 1:0            ];
-	 assign pixdata1 = pixdata_i[(PIX_WIDTH*2) - 1:(PIX_WIDTH  )];
-	 assign pixdata2 = pixdata_i[(PIX_WIDTH*3) - 1:(PIX_WIDTH*2)];
-	 assign pixdata3 = pixdata_i[(PIX_WIDTH*4) - 1:(PIX_WIDTH*3)];
-	 assign pixdata4 = pixdata_i[(PIX_WIDTH*5) - 1:(PIX_WIDTH*4)];
-	 assign pixdata5 = pixdata_i[(PIX_WIDTH*6) - 1:(PIX_WIDTH*5)];
+	wire [PIX_WIDTH - 1:0] pixdata0;
+	wire [PIX_WIDTH - 1:0] pixdata1;
+	wire [PIX_WIDTH - 1:0] pixdata2;
+	wire [PIX_WIDTH - 1:0] pixdata3;
+	wire [PIX_WIDTH - 1:0] pixdata4;
+	wire [PIX_WIDTH - 1:0] pixdata5;
+	assign pixdata0 = pixdata_i[(PIX_WIDTH  ) - 1:0            ];
+	assign pixdata1 = pixdata_i[(PIX_WIDTH*2) - 1:(PIX_WIDTH  )];
+	assign pixdata2 = pixdata_i[(PIX_WIDTH*3) - 1:(PIX_WIDTH*2)];
+	assign pixdata3 = pixdata_i[(PIX_WIDTH*4) - 1:(PIX_WIDTH*3)];
+	assign pixdata4 = pixdata_i[(PIX_WIDTH*5) - 1:(PIX_WIDTH*4)];
+	assign pixdata5 = pixdata_i[(PIX_WIDTH*6) - 1:(PIX_WIDTH*5)];
 `elsif NUM_PIX_LANE_8
-wire [PIX_WIDTH - 1:0] pixdata0;
-wire [PIX_WIDTH - 1:0] pixdata1;
-wire [PIX_WIDTH - 1:0] pixdata2;
-wire [PIX_WIDTH - 1:0] pixdata3;
-wire [PIX_WIDTH - 1:0] pixdata4;
-wire [PIX_WIDTH - 1:0] pixdata5;
-wire [PIX_WIDTH - 1:0] pixdata6;
-wire [PIX_WIDTH - 1:0] pixdata7;
-	 assign pixdata0 = pixdata_i[(PIX_WIDTH  ) - 1:0            ];
-	 assign pixdata1 = pixdata_i[(PIX_WIDTH*2) - 1:(PIX_WIDTH  )];
-	 assign pixdata2 = pixdata_i[(PIX_WIDTH*3) - 1:(PIX_WIDTH*2)];
-	 assign pixdata3 = pixdata_i[(PIX_WIDTH*4) - 1:(PIX_WIDTH*3)];
-	 assign pixdata4 = pixdata_i[(PIX_WIDTH*5) - 1:(PIX_WIDTH*4)];
-	 assign pixdata5 = pixdata_i[(PIX_WIDTH*6) - 1:(PIX_WIDTH*5)];
-	 assign pixdata6 = pixdata_i[(PIX_WIDTH*7) - 1:(PIX_WIDTH*6)];
-	 assign pixdata7 = pixdata_i[(PIX_WIDTH*8) - 1:(PIX_WIDTH*7)];
+	wire [PIX_WIDTH - 1:0] pixdata0;
+	wire [PIX_WIDTH - 1:0] pixdata1;
+	wire [PIX_WIDTH - 1:0] pixdata2;
+	wire [PIX_WIDTH - 1:0] pixdata3;
+	wire [PIX_WIDTH - 1:0] pixdata4;
+	wire [PIX_WIDTH - 1:0] pixdata5;
+	wire [PIX_WIDTH - 1:0] pixdata6;
+	wire [PIX_WIDTH - 1:0] pixdata7;
+	assign pixdata0 = pixdata_i[(PIX_WIDTH  ) - 1:0            ];
+	assign pixdata1 = pixdata_i[(PIX_WIDTH*2) - 1:(PIX_WIDTH  )];
+	assign pixdata2 = pixdata_i[(PIX_WIDTH*3) - 1:(PIX_WIDTH*2)];
+	assign pixdata3 = pixdata_i[(PIX_WIDTH*4) - 1:(PIX_WIDTH*3)];
+	assign pixdata4 = pixdata_i[(PIX_WIDTH*5) - 1:(PIX_WIDTH*4)];
+	assign pixdata5 = pixdata_i[(PIX_WIDTH*6) - 1:(PIX_WIDTH*5)];
+	assign pixdata6 = pixdata_i[(PIX_WIDTH*7) - 1:(PIX_WIDTH*6)];
+	assign pixdata7 = pixdata_i[(PIX_WIDTH*8) - 1:(PIX_WIDTH*7)];
 `elsif NUM_PIX_LANE_10
-wire [PIX_WIDTH - 1:0] pixdata0;
-wire [PIX_WIDTH - 1:0] pixdata1;
-wire [PIX_WIDTH - 1:0] pixdata2;
-wire [PIX_WIDTH - 1:0] pixdata3;
-wire [PIX_WIDTH - 1:0] pixdata4;
-wire [PIX_WIDTH - 1:0] pixdata5;
-wire [PIX_WIDTH - 1:0] pixdata6;
-wire [PIX_WIDTH - 1:0] pixdata7;
-wire [PIX_WIDTH - 1:0] pixdata8;
-wire [PIX_WIDTH - 1:0] pixdata9;
-	 assign pixdata0 = pixdata_i[(PIX_WIDTH  ) - 1:0            ];
-	 assign pixdata1 = pixdata_i[(PIX_WIDTH*2) - 1:(PIX_WIDTH  )];
-	 assign pixdata2 = pixdata_i[(PIX_WIDTH*3) - 1:(PIX_WIDTH*2)];
-	 assign pixdata3 = pixdata_i[(PIX_WIDTH*4) - 1:(PIX_WIDTH*3)];
-	 assign pixdata4 = pixdata_i[(PIX_WIDTH*5) - 1:(PIX_WIDTH*4)];
-	 assign pixdata5 = pixdata_i[(PIX_WIDTH*6) - 1:(PIX_WIDTH*5)];
-	 assign pixdata6 = pixdata_i[(PIX_WIDTH*7) - 1:(PIX_WIDTH*6)];
-	 assign pixdata7 = pixdata_i[(PIX_WIDTH*8) - 1:(PIX_WIDTH*7)];
-	 assign pixdata8 = pixdata_i[(PIX_WIDTH*9) - 1:(PIX_WIDTH*8)];
-	 assign pixdata9 = pixdata_i[(PIX_WIDTH*10)- 1:(PIX_WIDTH*9)];
+	wire [PIX_WIDTH - 1:0] pixdata0;
+	wire [PIX_WIDTH - 1:0] pixdata1;
+	wire [PIX_WIDTH - 1:0] pixdata2;
+	wire [PIX_WIDTH - 1:0] pixdata3;
+	wire [PIX_WIDTH - 1:0] pixdata4;
+	wire [PIX_WIDTH - 1:0] pixdata5;
+	wire [PIX_WIDTH - 1:0] pixdata6;
+	wire [PIX_WIDTH - 1:0] pixdata7;
+	wire [PIX_WIDTH - 1:0] pixdata8;
+	wire [PIX_WIDTH - 1:0] pixdata9;
+	assign pixdata0 = pixdata_i[(PIX_WIDTH  ) - 1:0            ];
+	assign pixdata1 = pixdata_i[(PIX_WIDTH*2) - 1:(PIX_WIDTH  )];
+	assign pixdata2 = pixdata_i[(PIX_WIDTH*3) - 1:(PIX_WIDTH*2)];
+	assign pixdata3 = pixdata_i[(PIX_WIDTH*4) - 1:(PIX_WIDTH*3)];
+	assign pixdata4 = pixdata_i[(PIX_WIDTH*5) - 1:(PIX_WIDTH*4)];
+	assign pixdata5 = pixdata_i[(PIX_WIDTH*6) - 1:(PIX_WIDTH*5)];
+	assign pixdata6 = pixdata_i[(PIX_WIDTH*7) - 1:(PIX_WIDTH*6)];
+	assign pixdata7 = pixdata_i[(PIX_WIDTH*8) - 1:(PIX_WIDTH*7)];
+	assign pixdata8 = pixdata_i[(PIX_WIDTH*9) - 1:(PIX_WIDTH*8)];
+	assign pixdata9 = pixdata_i[(PIX_WIDTH*10)- 1:(PIX_WIDTH*9)];
 `endif
 
 //Required for tb
@@ -160,8 +160,8 @@ assign txfr_req         = p2b_txfr_req;
 assign data_type = p2b_data_type;
 
 p2b i_p2b (
-	.pix_clk_i    			(pix_clk_i                   ),
-	.byte_clk_i   			(byte_clk                    ),
+	.pix_clk_i    			(pix_clk_i    ),
+	.byte_clk_i   			(byte_clk     ),
 	.rst_n_i      			(reset_n_i ),
 	.fv_i       			(fv_i         ),
 	.lv_i       			(lv_i         ),
@@ -275,6 +275,17 @@ leds (
 	.Reset_n(Reset_n),
 	.LED1(LED1),
 	.LED2(LED2)
+);
+
+image_generator image_generator_impl(
+	.Clock(VCLK),
+	.Reset(Reset),
+	.HS(HS),
+	.VS(VS),
+	.DE(DE),
+	.R(R),
+	.G(G),
+	.B(B)
 );
 
 //------CSI2 glue logic

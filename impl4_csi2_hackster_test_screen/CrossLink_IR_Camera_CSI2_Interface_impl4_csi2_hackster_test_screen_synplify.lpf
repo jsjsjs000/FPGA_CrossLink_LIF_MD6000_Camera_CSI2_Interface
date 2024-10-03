@@ -1,0 +1,89 @@
+#
+# Logical Preferences generated for Lattice by Synplify map202303lat, Build 132R.
+#
+
+# Period Constraints 
+#FREQUENCY NET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w" 1.0 MHz;
+#FREQUENCY PORT "top_clarity_tx_i2c_slave_scl_i" 1.0 MHz;
+#FREQUENCY NET "top_clarity_led_o_c[0]" 1.0 MHz;
+#FREQUENCY NET "i2c_module/state98" 1.0 MHz;
+#FREQUENCY NET "i2c_module/un1_i2cStall22_2" 1.0 MHz;
+#FREQUENCY NET "i2c_module/un1_i2cStall22_3" 1.0 MHz;
+#FREQUENCY NET "ctrl_inst/LedPulse" 1.0 MHz;
+
+
+# Output Constraints 
+
+# Input Constraints 
+
+# Point-to-point Delay Constraints 
+
+#MULTICYCLE FROM CLKNET "ctrl_inst/LedPulse"  TO CLKNET "ctrl_inst/LedPulse"  2X;
+#MULTICYCLE FROM CLKNET "ctrl_inst/LedPulse"  TO CLKNET "ctrl_inst/LedPulse"  1X;
+
+
+# Block Path Constraints 
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_3" TO CLKNET "i2c_module/un1_i2cStall22_2";
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_3" TO CLKNET "i2c_module/state98";
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_3" TO CLKNET "top_clarity_led_o_c[0]";
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_3" TO CLKNET "top_clarity_tx_i2c_slave_scl_i_c";
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_3" TO CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w";
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_2" TO CLKNET "i2c_module/un1_i2cStall22_3";
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_2" TO CLKNET "i2c_module/state98";
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_2" TO CLKNET "top_clarity_led_o_c[0]";
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_2" TO CLKNET "top_clarity_tx_i2c_slave_scl_i_c";
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_2" TO CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w";
+#BLOCK PATH FROM CLKNET "i2c_module/state98" TO CLKNET "i2c_module/un1_i2cStall22_3";
+#BLOCK PATH FROM CLKNET "i2c_module/state98" TO CLKNET "i2c_module/un1_i2cStall22_2";
+#BLOCK PATH FROM CLKNET "i2c_module/state98" TO CLKNET "top_clarity_led_o_c[0]";
+#BLOCK PATH FROM CLKNET "i2c_module/state98" TO CLKNET "top_clarity_tx_i2c_slave_scl_i_c";
+#BLOCK PATH FROM CLKNET "i2c_module/state98" TO CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w";
+#BLOCK PATH FROM CLKNET "top_clarity_led_o_c[0]" TO CLKNET "i2c_module/un1_i2cStall22_3";
+#BLOCK PATH FROM CLKNET "top_clarity_led_o_c[0]" TO CLKNET "i2c_module/un1_i2cStall22_2";
+#BLOCK PATH FROM CLKNET "top_clarity_led_o_c[0]" TO CLKNET "i2c_module/state98";
+#BLOCK PATH FROM CLKNET "top_clarity_led_o_c[0]" TO CLKNET "top_clarity_tx_i2c_slave_scl_i_c";
+#BLOCK PATH FROM CLKNET "top_clarity_led_o_c[0]" TO CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w";
+#BLOCK PATH FROM CLKNET "top_clarity_tx_i2c_slave_scl_i_c" TO CLKNET "i2c_module/un1_i2cStall22_3";
+#BLOCK PATH FROM CLKNET "top_clarity_tx_i2c_slave_scl_i_c" TO CLKNET "i2c_module/un1_i2cStall22_2";
+#BLOCK PATH FROM CLKNET "top_clarity_tx_i2c_slave_scl_i_c" TO CLKNET "i2c_module/state98";
+#BLOCK PATH FROM CLKNET "top_clarity_tx_i2c_slave_scl_i_c" TO CLKNET "top_clarity_led_o_c[0]";
+#BLOCK PATH FROM CLKNET "top_clarity_tx_i2c_slave_scl_i_c" TO CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w";
+#BLOCK PATH FROM CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w" TO CLKNET "i2c_module/un1_i2cStall22_3";
+#BLOCK PATH FROM CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w" TO CLKNET "i2c_module/un1_i2cStall22_2";
+#BLOCK PATH FROM CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w" TO CLKNET "i2c_module/state98";
+#BLOCK PATH FROM CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w" TO CLKNET "top_clarity_led_o_c[0]";
+#BLOCK PATH FROM CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w" TO CLKNET "top_clarity_tx_i2c_slave_scl_i_c";
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_3" TO CLKNET "i2c_module/un1_i2cStall22_2";
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_3" TO CLKNET "i2c_module/state98";
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_3" TO CLKNET "top_clarity_led_o_c[0]";
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_3" TO CLKNET "top_clarity_tx_i2c_slave_scl_i_c";
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_3" TO CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w";
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_2" TO CLKNET "i2c_module/un1_i2cStall22_3";
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_2" TO CLKNET "i2c_module/state98";
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_2" TO CLKNET "top_clarity_led_o_c[0]";
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_2" TO CLKNET "top_clarity_tx_i2c_slave_scl_i_c";
+#BLOCK PATH FROM CLKNET "i2c_module/un1_i2cStall22_2" TO CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w";
+#BLOCK PATH FROM CLKNET "i2c_module/state98" TO CLKNET "i2c_module/un1_i2cStall22_3";
+#BLOCK PATH FROM CLKNET "i2c_module/state98" TO CLKNET "i2c_module/un1_i2cStall22_2";
+#BLOCK PATH FROM CLKNET "i2c_module/state98" TO CLKNET "top_clarity_led_o_c[0]";
+#BLOCK PATH FROM CLKNET "i2c_module/state98" TO CLKNET "top_clarity_tx_i2c_slave_scl_i_c";
+#BLOCK PATH FROM CLKNET "i2c_module/state98" TO CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w";
+#BLOCK PATH FROM CLKNET "top_clarity_led_o_c[0]" TO CLKNET "i2c_module/un1_i2cStall22_3";
+#BLOCK PATH FROM CLKNET "top_clarity_led_o_c[0]" TO CLKNET "i2c_module/un1_i2cStall22_2";
+#BLOCK PATH FROM CLKNET "top_clarity_led_o_c[0]" TO CLKNET "i2c_module/state98";
+#BLOCK PATH FROM CLKNET "top_clarity_led_o_c[0]" TO CLKNET "top_clarity_tx_i2c_slave_scl_i_c";
+#BLOCK PATH FROM CLKNET "top_clarity_led_o_c[0]" TO CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w";
+#BLOCK PATH FROM CLKNET "top_clarity_tx_i2c_slave_scl_i_c" TO CLKNET "i2c_module/un1_i2cStall22_3";
+#BLOCK PATH FROM CLKNET "top_clarity_tx_i2c_slave_scl_i_c" TO CLKNET "i2c_module/un1_i2cStall22_2";
+#BLOCK PATH FROM CLKNET "top_clarity_tx_i2c_slave_scl_i_c" TO CLKNET "i2c_module/state98";
+#BLOCK PATH FROM CLKNET "top_clarity_tx_i2c_slave_scl_i_c" TO CLKNET "top_clarity_led_o_c[0]";
+#BLOCK PATH FROM CLKNET "top_clarity_tx_i2c_slave_scl_i_c" TO CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w";
+#BLOCK PATH FROM CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w" TO CLKNET "i2c_module/un1_i2cStall22_3";
+#BLOCK PATH FROM CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w" TO CLKNET "i2c_module/un1_i2cStall22_2";
+#BLOCK PATH FROM CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w" TO CLKNET "i2c_module/state98";
+#BLOCK PATH FROM CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w" TO CLKNET "top_clarity_led_o_c[0]";
+#BLOCK PATH FROM CLKNET "clarity_tx2_inst/u_dphy_tx/dci_wrapper_inst/top_clarity_tx_byte_clk_w" TO CLKNET "top_clarity_tx_i2c_slave_scl_i_c";
+
+BLOCK ASYNCPATHS;
+
+# End of generated Logical Preferences.
