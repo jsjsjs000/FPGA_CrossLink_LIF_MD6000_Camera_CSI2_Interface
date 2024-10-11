@@ -56,8 +56,8 @@ module simulator_top (
 	//LED[2] is D8 on board and flashes when streaming.
 	//LED[3] is D9 on board and is value of top_clarity_tx_start_stream_w which is on=stream
 
-	assign top_clarity_led_o[0] = i2c_slave_led_w[0];
-//assign top_clarity_led_o[0] = top_clarity_tx_ref_clk_w; // $$
+	//assign top_clarity_led_o[0] = i2c_slave_led_w[0];
+assign top_clarity_led_o[0] = top_clarity_tx_ref_clk_w; // $$
 	assign top_clarity_led_o[1] = i2c_slave_led_w[1];
 	assign top_clarity_led_o[2] = csi2_tx_led_w[2];
 	assign top_clarity_led_o[3] = i2c_slave_led_w[3];
@@ -109,7 +109,8 @@ module simulator_top (
             .ctrl_tx_led_o(	csi2_tx_led_w)	
 	); 
 	
-	wire [3:0]i2c_slave_led_w;    i2c_slave_top i2c_module(
+	wire [3:0]i2c_slave_led_w;
+	i2c_slave_top i2c_module(
 	        .i2c_slave_top_ref_clk_i(top_clarity_tx_ref_clk_w),
 	        .i2c_slave_top_reset_i(top_clarity_tx_reset_n_w), 
 			.i2c_slave_scl_i(top_clarity_tx_i2c_slave_scl_i), 

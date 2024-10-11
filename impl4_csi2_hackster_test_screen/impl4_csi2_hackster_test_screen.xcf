@@ -20,8 +20,8 @@
 				<BScanVal>0</BScanVal>
 			</Bypass>
 			<File>C:/jarsulk-pco/projects/CrossLink-IR-Camera-CSI2-Interface/impl4_csi2_hackster_test_screen/CrossLink_IR_Camera_CSI2_Interface_impl4_csi2_hackster_test_screen.bit</File>
-			<FileTime>10/03/24 17:28:00</FileTime>
-			<JedecChecksum>0x2C54</JedecChecksum>
+			<FileTime>10/11/24 13:20:27</FileTime>
+			<JedecChecksum>0xAAC6</JedecChecksum>
 			<Operation>Fast Program</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>

@@ -143,6 +143,7 @@ module csi2_tx_simulator_ctrl (
 	
 	//SP = short packet, LP = long packet, FS = frame start, FE = Frame end
 	localparam  IDLE                                           = 5'd0, 
+				START                                          = 5'd1,
                 PLL_LOCK                                       = 5'd1,
                 TINIT_DONE                                     = 5'd2,
 				WAIT_TINIT                                     = 5'd3,
