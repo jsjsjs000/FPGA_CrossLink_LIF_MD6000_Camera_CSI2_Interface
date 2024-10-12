@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="csi2_output_eval" device="LIF-MD6000-6KMG80I" synthesis="synplify" default_implementation="csi2_output_eval">
+    <Implementation title="csi2_output_eval" dir="csi2_output_eval" description="csi2_output_eval" default_strategy="csi2_output_top">
+        <Options>
+            <Option name="HDL type" value="Verilog"/>
+            <Option name="top" value="csi2_output_wrap"/>
+        </Options>
+        <Source name="../../../../../csi2_output_synchronizer.v" type="Verilog"/>
+        <Source name="../../../../../csi2_output_pkt_formatter_bb.v" type="Verilog"/>
+        <Source name="../../../../../csi2_output_tx_global_operation_bb.v" type="Verilog"/>
+        <Source name="../../../../../csi2_output_dci_wrapper.v" type="Verilog"/>
+        <Source name="../../../../../csi2_output_tinit_count_bb.v" type="Verilog"/>
+        <Source name="../../../../../csi2_output_dphy_tx.v" type="Verilog"/>
+        <Source name="../../../../../csi2_output_wrap.v" type="Verilog"/>
+        <Source name="csi2_output_top.lpf" type="Logic Preference"/>
+    </Implementation>
+    <Strategy name="csi2_output_top" file="csi2_output_top.sty"/>
+</BaliProject>

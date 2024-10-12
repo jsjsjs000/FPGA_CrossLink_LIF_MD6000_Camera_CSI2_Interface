@@ -1,0 +1,103 @@
+#--  Synopsys, Inc.
+#--  Version U-2023.03L-SP1
+#--  Project file C:\CrossLink-IR-Camera-CSI2-Interface\impl5_csi2_hackster_test_screen_640x480x60\scratchproject.prs
+
+#project files
+add_file -verilog -vlog_std v2001 "C:/CrossLink-IR-Camera-CSI2-Interface/impl5_csi2_hackster_test_screen_640x480x60/simulator_top.v"
+add_file -verilog -vlog_std v2001 "C:/CrossLink-IR-Camera-CSI2-Interface/impl5_csi2_hackster_test_screen_640x480x60/image_generator.v"
+add_file -verilog -vlog_std v2001 "C:/CrossLink-IR-Camera-CSI2-Interface/impl5_csi2_hackster_test_screen_640x480x60/csi2_tx_simulator_ctrl.v"
+add_file -verilog -vlog_std v2001 "C:/CrossLink-IR-Camera-CSI2-Interface/impl5_csi2_hackster_test_screen_640x480x60/i2c_slave_logic.v"
+add_file -verilog -vlog_std v2001 "C:/CrossLink-IR-Camera-CSI2-Interface/impl5_csi2_hackster_test_screen_640x480x60/i2c_slave_top.v"
+add_file -verilog -vlog_std v2001 "C:/CrossLink-IR-Camera-CSI2-Interface/impl5_csi2_hackster_test_screen_640x480x60/ip_cores/csi2_output/csi2_output.v"
+add_file -verilog -vlog_std v2001 "C:/CrossLink-IR-Camera-CSI2-Interface/impl5_csi2_hackster_test_screen_640x480x60/ip_cores/csi2_output/csi2_output_dphy_tx.v"
+add_file -verilog -vlog_std v2001 "C:/CrossLink-IR-Camera-CSI2-Interface/impl5_csi2_hackster_test_screen_640x480x60/ip_cores/csi2_output/csi2_output_synchronizer.v"
+add_file -verilog -vlog_std v2001 "C:/CrossLink-IR-Camera-CSI2-Interface/impl5_csi2_hackster_test_screen_640x480x60/ip_cores/csi2_output/csi2_output_dci_wrapper.v"
+add_file -verilog -vlog_std v2001 "C:/CrossLink-IR-Camera-CSI2-Interface/impl5_csi2_hackster_test_screen_640x480x60/ip_cores/csi2_output/csi2_output_pkt_formatter_bb.v"
+add_file -verilog -vlog_std v2001 "C:/CrossLink-IR-Camera-CSI2-Interface/impl5_csi2_hackster_test_screen_640x480x60/ip_cores/csi2_output/csi2_output_tinit_count_bb.v"
+add_file -verilog -vlog_std v2001 "C:/CrossLink-IR-Camera-CSI2-Interface/impl5_csi2_hackster_test_screen_640x480x60/ip_cores/csi2_output/csi2_output_tx_global_operation_bb.v"
+add_file -verilog -vlog_std v2001 "C:/CrossLink-IR-Camera-CSI2-Interface/impl5_csi2_hackster_test_screen_640x480x60/ip_cores/ip_cores.v"
+
+
+#implementation: "impl5_csi2_hackster_test_screen_640x480x60"
+impl -add C:\CrossLink-IR-Camera-CSI2-Interface\impl5_csi2_hackster_test_screen_640x480x60 -type fpga
+
+#
+#implementation attributes
+
+set_option -vlog_std v2001
+set_option -project_relative_includes 1
+set_option -hdl_define -set SBP_SYNTHESIS
+set_option -include_path {C:/CrossLink-IR-Camera-CSI2-Interface/impl5_csi2_hackster_test_screen_640x480x60/}
+set_option -include_path {C:/CrossLink-IR-Camera-CSI2-Interface}
+
+#device options
+set_option -technology LIFMD
+set_option -part LIF_MD6000
+set_option -package KMG80I
+set_option -speed_grade -6
+set_option -part_companion ""
+
+#compilation/mapping options
+set_option -top_module "simulator_top"
+
+# hdl_compiler_options
+set_option -distributed_compile 0
+set_option -scm2hydra 0
+set_option -scm2hydra_preserve_rtl_sig 1
+set_option -hdl_strict_syntax 0
+set_option -rtl_xmr_naming 0
+set_option -use_module_idb 1
+
+# mapper_without_write_options
+set_option -frequency 1
+set_option -srs_instrumentation 1
+
+# mapper_options
+set_option -write_verilog 0
+set_option -write_structural_verilog 0
+set_option -write_vhdl 0
+
+# Lattice XP
+set_option -maxfan 1000
+set_option -disable_io_insertion 0
+set_option -retiming 0
+set_option -pipe 1
+set_option -forcegsr false
+set_option -fix_gated_and_generated_clocks 1
+set_option -rw_check_on_ram 1
+set_option -update_models_cp 0
+set_option -syn_edif_array_rename 1
+set_option -Write_declared_clocks_only 1
+set_option -seqshift_no_replicate 0
+
+# NFilter
+set_option -no_sequential_opt 0
+
+# common_options
+set_option -add_dut_hierarchy 0
+set_option -prepare_readback 0
+
+# flow_options
+set_option -use_unified_compile 0
+set_option -slr_aware_debug 0
+
+# sequential_optimization_options
+set_option -symbolic_fsm_compiler 1
+
+# Compiler Options
+set_option -compiler_compatible 0
+set_option -resource_sharing 1
+set_option -multi_file_compilation_unit 1
+
+# Compiler Options
+set_option -auto_infer_blackbox 0
+
+#automatic place and route (vendor) options
+set_option -write_apr_constraint 1
+
+#set result format/file last
+project -result_file "C:/CrossLink-IR-Camera-CSI2-Interface/impl5_csi2_hackster_test_screen_640x480x60/CrossLink_IR_Camera_CSI2_Interface_impl5_csi2_hackster_test_screen_640x480x60.edi"
+
+#set log file 
+set_option log_file "C:/CrossLink-IR-Camera-CSI2-Interface/impl5_csi2_hackster_test_screen_640x480x60/CrossLink_IR_Camera_CSI2_Interface_impl5_csi2_hackster_test_screen_640x480x60.srf" 
+impl -active "impl5_csi2_hackster_test_screen_640x480x60"

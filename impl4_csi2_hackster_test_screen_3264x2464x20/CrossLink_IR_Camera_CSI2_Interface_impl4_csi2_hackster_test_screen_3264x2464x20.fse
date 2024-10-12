@@ -1,0 +1,40 @@
+
+fsm_encoding {716201621} onehot
+
+fsm_state_encoding {716201621} idle {000000000000000001}
+
+fsm_state_encoding {716201621} addr7 {000000000000000010}
+
+fsm_state_encoding {716201621} addr6 {000000000000000100}
+
+fsm_state_encoding {716201621} addr5 {000000000000001000}
+
+fsm_state_encoding {716201621} addr4 {000000000000010000}
+
+fsm_state_encoding {716201621} addr3 {000000000000100000}
+
+fsm_state_encoding {716201621} addr2 {000000000001000000}
+
+fsm_state_encoding {716201621} addr1 {000000000010000000}
+
+fsm_state_encoding {716201621} det_rw {000000000100000000}
+
+fsm_state_encoding {716201621} ack {000000001000000000}
+
+fsm_state_encoding {716201621} data7 {000000010000000000}
+
+fsm_state_encoding {716201621} data6 {000000100000000000}
+
+fsm_state_encoding {716201621} data5 {000001000000000000}
+
+fsm_state_encoding {716201621} data4 {000010000000000000}
+
+fsm_state_encoding {716201621} data3 {000100000000000000}
+
+fsm_state_encoding {716201621} data2 {001000000000000000}
+
+fsm_state_encoding {716201621} data1 {010000000000000000}
+
+fsm_state_encoding {716201621} data0 {100000000000000000}
+
+fsm_registers {716201621} {sm_state[17]}  {sm_state[16]}  {sm_state[15]}  {sm_state[14]}  {sm_state[13]}  {sm_state[12]}  {sm_state[11]}  {sm_state[10]}  {sm_state[9]}  {sm_state[8]}  {sm_state[7]}  {sm_state[6]}  {sm_state[5]}  {sm_state[4]}  {sm_state[3]}  {sm_state[2]}  {sm_state[1]}  {sm_state[0]} 

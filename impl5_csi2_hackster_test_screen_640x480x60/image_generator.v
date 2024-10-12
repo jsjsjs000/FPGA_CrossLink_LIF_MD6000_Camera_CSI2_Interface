@@ -58,20 +58,20 @@ module image_generator (
 			end
 			
 			//Image 0, horizontal lines of red blue green and white/yellow
-			if(image_pattern == 0) begin
-				if((line_number_i <= 2464) && (line_number_i >= 1848)) begin
+			if(image_pattern == 0) begin  // height 480 (4 bars: 0, 120, 240, 360, 480)
+				if((line_number_i <= 480) && (line_number_i >= 360)) begin
 					pixel_red_o <=        10'b1111111111;   
 	                pixel_green_red_o <=  10'b0000000000;    
 	                pixel_green_blue_o <= 10'b0000000000;    
 	                pixel_blue_o <=       10'b0000000000;
 				end
-				else if((line_number_i < 1848) && (line_number_i >= 1232)) begin
+				else if((line_number_i < 360) && (line_number_i >= 240)) begin
 					pixel_red_o <=        10'b0000000000;   
 	                pixel_green_red_o <=  10'b0000000000;    
 	                pixel_green_blue_o <= 10'b0000000000;    
 	                pixel_blue_o <=       10'b1111111111;
 				end
-				else if((line_number_i < 1232) && (line_number_i >= 616)) begin
+				else if((line_number_i < 240) && (line_number_i >= 120)) begin
 					pixel_red_o <=        10'b0000000000;   
 	                pixel_green_red_o <=  10'b1111111111;    
 	                pixel_green_blue_o <= 10'b1111111111;    
@@ -85,20 +85,20 @@ module image_generator (
 				end					
 			end
 			//Image 1, vertical lines of red blue green and white/yellow
-			else if(image_pattern == 1) begin
-				if((hori_pixel_count_i <= 2040) && (hori_pixel_count_i >= 1530)) begin
+			else if(image_pattern == 1) begin  // width 640 (RAW10 - 4 pixels = 5 bytes) - 640 * 5 / 4 = 800 / 2 = 400 (4 bars: 0, 100, 200, 300, 400)
+				if((hori_pixel_count_i <= 400) && (hori_pixel_count_i >= 300)) begin
 					pixel_red_o <=        10'b1111111111;   
 	                pixel_green_red_o <=  10'b0000000000;    
 	                pixel_green_blue_o <= 10'b0000000000;    
 	                pixel_blue_o <=       10'b0000000000;
 				end
-				else if((hori_pixel_count_i < 1530) && (hori_pixel_count_i >= 1020)) begin
+				else if((hori_pixel_count_i < 300) && (hori_pixel_count_i >= 200)) begin
 					pixel_red_o <=        10'b0000000000;   
 	                pixel_green_red_o <=  10'b0000000000;    
 	                pixel_green_blue_o <= 10'b0000000000;    
 	                pixel_blue_o <=       10'b1111111111;
 				end
-				else if((hori_pixel_count_i < 1020) && (hori_pixel_count_i >= 510)) begin
+				else if((hori_pixel_count_i < 200) && (hori_pixel_count_i >= 100)) begin
 					pixel_red_o <=        10'b0000000000;   
 	                pixel_green_red_o <=  10'b1111111111;    
 	                pixel_green_blue_o <= 10'b1111111111;    

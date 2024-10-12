@@ -19,16 +19,15 @@
 				<BScanLen>1</BScanLen>
 				<BScanVal>0</BScanVal>
 			</Bypass>
-			<File>C:/jarsulk-pco/projects/CrossLink-IR-Camera-CSI2-Interface/impl4_csi2_hackster_test_screen/CrossLink_IR_Camera_CSI2_Interface_impl4_csi2_hackster_test_screen.bit</File>
-			<FileTime>10/11/24 13:20:27</FileTime>
-			<JedecChecksum>0xAAC6</JedecChecksum>
+			<File>C:/CrossLink-IR-Camera-CSI2-Interface/impl5_csi2_hackster_test_screen_640x480x60/CrossLink_IR_Camera_CSI2_Interface_impl5_csi2_hackster_test_screen_640x480x60.bit</File>
+			<FileTime>10/12/24 19:30:27</FileTime>
+			<JedecChecksum>0xA077</JedecChecksum>
 			<Operation>Fast Program</Operation>
 			<Option>
 				<SVFVendor>JTAG STANDARD</SVFVendor>
 				<IOState>HighZ</IOState>
 				<PreloadLength>39</PreloadLength>
 				<IOVectorData>0xFFFFFFFFFF</IOVectorData>
-				<SVFProcessor>SVF Processor</SVFProcessor>
 				<Usercode>0x00000000</Usercode>
 				<AccessMode>SSPI SRAM Programming</AccessMode>
 			</Option>

@@ -1,0 +1,7 @@
+Potential Glitch can occur at the output of instance i:i2c_module.state30 
+Potential Glitch can occur at the output of instance i:i2c_module.state_2_sqmuxa_3 
+Potential Glitch can occur at the output of instance i:i2c_module.state_2_sqmuxa_3_uclk 
+Potential Glitch can occur at the output of instance i:i2c_module.un1_i2cStall22 
+Potential Glitch can occur at the output of instance i:i2c_module.un1_i2cStall22_1 
+Potential Glitch can occur at the output of instance i:i2c_module.un1_i2cStall22_3 
+Potential Glitch can occur at the output of instance i:i2c_module.un1_i2cStall22_2 

@@ -58,7 +58,7 @@ module image_generator (
 			end
 			
 			//Image 0, horizontal lines of red blue green and white/yellow
-			if(image_pattern == 0) begin
+			if(image_pattern == 0) begin  // height 2464 (4 bars: 0, 616, 1232, 1848, 2464)
 				if((line_number_i <= 2464) && (line_number_i >= 1848)) begin
 					pixel_red_o <=        10'b1111111111;   
 	                pixel_green_red_o <=  10'b0000000000;    
@@ -85,7 +85,7 @@ module image_generator (
 				end					
 			end
 			//Image 1, vertical lines of red blue green and white/yellow
-			else if(image_pattern == 1) begin
+			else if(image_pattern == 1) begin  // width 3264 (RAW10 - 4 pixels = 5 bytes) - 3264 * 5 / 4 = 4080 / 2 = 2040 (4 bars: 0, 510, 1020, 1530, 2040)
 				if((hori_pixel_count_i <= 2040) && (hori_pixel_count_i >= 1530)) begin
 					pixel_red_o <=        10'b1111111111;   
 	                pixel_green_red_o <=  10'b0000000000;    

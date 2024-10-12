@@ -59,16 +59,7 @@
         </Source>
     </Implementation>
     <Implementation title="impl4_csi2_hackster_test_screen_3264x2464x20" dir="impl4_csi2_hackster_test_screen_3264x2464x20" description="impl4_csi2_hackster_test_screen_3264x2464x20" synthesis="synplify" default_strategy="Area">
-        <Options def_top="simulator_top" top="simulator_top"/>
-        <Source name="impl4_csi2_hackster_test_screen_3264x2464x20/ip_cores/ip_cores.sbx" type="sbx" type_short="SBX">
-            <Options/>
-        </Source>
-        <Source name="impl4_csi2_hackster_test_screen_3264x2464x20/i2c_slave_top.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
-        <Source name="impl4_csi2_hackster_test_screen_3264x2464x20/image_generator.v" type="Verilog" type_short="Verilog">
-            <Options/>
-        </Source>
+        <Options def_top="ip_cores" top="simulator_top"/>
         <Source name="impl4_csi2_hackster_test_screen_3264x2464x20/simulator_top.v" type="Verilog" type_short="Verilog">
             <Options top_module="simulator_top"/>
         </Source>
@@ -78,26 +69,29 @@
         <Source name="impl4_csi2_hackster_test_screen_3264x2464x20/i2c_slave_logic.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="impl4_csi2_hackster_test_screen_3264x2464x20/impl4_csi2_hackster_test_screen.xcf" type="Programming Project File" type_short="Programming">
+        <Source name="impl4_csi2_hackster_test_screen_3264x2464x20/i2c_slave_top.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="impl4_csi2_hackster_test_screen_3264x2464x20/source/CrossLink_IR_Camera_CSI2_Interface.lpf" type="Logic Preference" type_short="LPF">
+        <Source name="impl4_csi2_hackster_test_screen_3264x2464x20/image_generator.v" type="Verilog" type_short="Verilog">
+            <Options/>
+        </Source>
+        <Source name="impl4_csi2_hackster_test_screen_3264x2464x20/ip_cores/ip_cores.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="impl4_csi2_hackster_test_screen_3264x2464x20/impl4_csi2_hackster_test_screen_3264x2464x20.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="impl4_csi2_hackster_test_screen_3264x2464x20/impl4_csi2_hackster_test_screen_3264x2464x20.xcf" type="Programming Project File" type_short="Programming">
             <Options/>
         </Source>
     </Implementation>
     <Implementation title="impl5_csi2_hackster_test_screen_640x480x60" dir="impl5_csi2_hackster_test_screen_640x480x60" description="impl5_csi2_hackster_test_screen_640x480x60" synthesis="synplify" default_strategy="Area">
-        <Options def_top="simulator_top" top="simulator_top"/>
-        <Source name="impl5_csi2_hackster_test_screen_640x480x60/ip_cores/ip_cores.sbx" type="sbx" type_short="SBX">
-            <Options/>
-        </Source>
-        <Source name="impl5_csi2_hackster_test_screen_640x480x60/i2c_slave_top.v" type="Verilog" type_short="Verilog">
-            <Options/>
+        <Options def_top="ip_cores" top="simulator_top"/>
+        <Source name="impl5_csi2_hackster_test_screen_640x480x60/simulator_top.v" type="Verilog" type_short="Verilog">
+            <Options top_module="simulator_top"/>
         </Source>
         <Source name="impl5_csi2_hackster_test_screen_640x480x60/image_generator.v" type="Verilog" type_short="Verilog">
             <Options/>
-        </Source>
-        <Source name="impl5_csi2_hackster_test_screen_640x480x60/simulator_top.v" type="Verilog" type_short="Verilog">
-            <Options top_module="simulator_top"/>
         </Source>
         <Source name="impl5_csi2_hackster_test_screen_640x480x60/csi2_tx_simulator_ctrl.v" type="Verilog" type_short="Verilog">
             <Options/>
@@ -105,10 +99,16 @@
         <Source name="impl5_csi2_hackster_test_screen_640x480x60/i2c_slave_logic.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="impl5_csi2_hackster_test_screen_640x480x60/impl4_csi2_hackster_test_screen.xcf" type="Programming Project File" type_short="Programming">
+        <Source name="impl5_csi2_hackster_test_screen_640x480x60/i2c_slave_top.v" type="Verilog" type_short="Verilog">
             <Options/>
         </Source>
-        <Source name="impl5_csi2_hackster_test_screen_640x480x60/source/CrossLink_IR_Camera_CSI2_Interface.lpf" type="Logic Preference" type_short="LPF">
+        <Source name="impl5_csi2_hackster_test_screen_640x480x60/ip_cores/ip_cores.sbx" type="sbx" type_short="SBX">
+            <Options/>
+        </Source>
+        <Source name="impl5_csi2_hackster_test_screen_640x480x60/impl5_csi2_hackster_test_screen_640x480x60.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="impl5_csi2_hackster_test_screen_640x480x60/impl5_csi2_hackster_test_screen_640x480x60.xcf" type="Programming Project File" type_short="Programming">
             <Options/>
         </Source>
     </Implementation>

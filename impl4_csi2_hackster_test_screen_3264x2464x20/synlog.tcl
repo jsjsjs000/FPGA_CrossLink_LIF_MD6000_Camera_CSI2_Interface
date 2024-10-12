@@ -1,0 +1,1 @@
+run_tcl -fg CrossLink_IR_Camera_CSI2_Interface_impl4_csi2_hackster_test_screen_3264x2464x20_synplify.tcl

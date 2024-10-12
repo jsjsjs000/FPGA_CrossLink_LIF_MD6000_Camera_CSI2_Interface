@@ -122,7 +122,7 @@ module csi2_tx_simulator_ctrl (
 	
 	/* byte clk is currently set to 106Mhz */
 	parameter EXPOSURE_SIM_TIMER = 12'd3200;   /* ~30us exposure time */
-	
+	                                            /* 30us * 106'000'000Hz = 3180 */
 	reg LineState;
 	localparam  LINESTATE_EVEN                                = 1'd0,
 	            LINESTATE_ODD                                 = 1'd1;

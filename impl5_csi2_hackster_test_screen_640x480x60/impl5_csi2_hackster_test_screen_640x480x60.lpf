@@ -1,0 +1,16 @@
+BLOCK RESETPATHS ;
+BLOCK ASYNCPATHS ;
+IOBUF PORT "top_clarity_tx_reset_n_i" IO_TYPE=LVCMOS18 ;
+IOBUF PORT "top_clarity_tx_i2c_slave_scl_i" IO_TYPE=LVCMOS18 ;
+IOBUF PORT "top_clarity_led_o[0]" IO_TYPE=LVCMOS18 ;
+IOBUF PORT "top_clarity_led_o[1]" IO_TYPE=LVCMOS18 ;
+IOBUF PORT "top_clarity_led_o[2]" IO_TYPE=LVCMOS18 ;
+IOBUF PORT "top_clarity_led_o[3]" IO_TYPE=LVCMOS18 ;
+IOBUF PORT "top_clarity_tx_i2c_slave_sda_io" IO_TYPE=LVCMOS18 ;
+LOCATE COMP "top_clarity_tx_reset_n_i" SITE "E9" ;
+LOCATE COMP "top_clarity_led_o[0]" SITE "F2" ;
+LOCATE COMP "top_clarity_led_o[1]" SITE "E2" ;
+LOCATE COMP "top_clarity_tx_i2c_slave_sda_io" SITE "K2" ;
+LOCATE COMP "top_clarity_tx_i2c_slave_scl_i" SITE "D1" ;
+LOCATE COMP "top_clarity_led_o[2]" SITE "D9" ;
+LOCATE COMP "top_clarity_led_o[3]" SITE "F10" ;

@@ -6,6 +6,7 @@
 *.bit
 *.cam
 *.ccl
+*.db
 *.dir
 *.drc
 *.hrr
@@ -44,7 +45,11 @@
 *.vdbs
 *.vcd
 *.xml
+*.zip
 *_prim.v
+*_tmp2.lpf
+*_tmp4.lpf
+*_tmp8.lpf
 .build_status
 .recovery
 xxx_lse_cp_file_list

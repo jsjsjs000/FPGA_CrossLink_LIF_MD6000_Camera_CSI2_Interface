@@ -111,17 +111,18 @@ module csi2_tx_simulator_ctrl (
 	reg LedPulse;
 	reg [5:0]LedPulseCount;
 	
-	/* 4 pixels = 5 bytes (RAW10) 3264 pixels = 4080 bytes =  2040 bytes/lane has to be multiple of 4  */
-	parameter NUM_PIXEL_BYTES      = 12'd4080;
-	parameter ASSERT_BYTE_EN_TIMER = 12'd2040;	
-    parameter NUM_OF_LINES         = 12'd2464;
+	/* 4 pixels = 5 bytes (RAW10) 640 pixels = 800 bytes = 400 bytes/lane has to be multiple of 4  */
+	parameter NUM_PIXEL_BYTES      = 12'd800;
+	parameter ASSERT_BYTE_EN_TIMER = 12'd400;	
+    parameter NUM_OF_LINES         = 12'd480;
 	
 	/* Send 10bytes of embedded data */
 	parameter NUM_EMBEDDED_BYTES = 12'd10;
 	parameter ASSERT_BYTE_EMBEDDED_TIMER = 12'd5;  //5 bc 2 lanes
 	
-	/* byte clk is currently set to 106Mhz */
-	parameter EXPOSURE_SIM_TIMER = 12'd3200;   /* ~30us exposure time */
+	/* byte clk is currently set to 21Mhz -> 19,5MHz (-7,5%) */
+	parameter EXPOSURE_SIM_TIMER = 12'd600;   /* ~30us exposure time */
+	                                           /* 30us * 19'500'000Hz = 585 -> 600 */
 	
 	reg LineState;
 	localparam  LINESTATE_EVEN                                = 1'd0,

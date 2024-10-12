@@ -1,0 +1,9 @@
+BLOCK ASYNCPATHS ;
+BLOCK RESETPATHS ;
+BLOCK NET "reset_n*" ;
+BLOCK NET "dphy_tx_inst/core_rstn" ;
+GSR_NET NET "reset_n_i_c";
+FREQUENCY PORT "ref_clk_i"       48 MHz ;
+FREQUENCY NET "ref_clk_i_c"      48 MHz ;
+FREQUENCY NET "byte_clk_o_c"       114.0000 MHz ;
+SYSCONFIG SLAVE_SPI_PORT=DISABLE;
